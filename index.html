@@ -716,6 +716,23 @@
         flex-direction: column;
       }
     }
+
+    .portrait-container {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 20px;
+      margin: 0 auto;
+    }
+
+    .candidate-photo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   </style>
 </head>
 
@@ -749,9 +766,10 @@
           </div>
           <div class="hero-note">TRANSPARENCY · REPRESENTATION · INCLUSIVITY · ADVOCACY · LEGACY</div>
         </div>
-        <aside>
-          <img src="./assets/lateef.jpg.jpeg" alt="Lateef Photo" width="255" height="255">
+        <aside class="portrait-container">
+          <img src="./assets/lateef.jpg" alt="Lateef Photo" class="candidate-photo">
         </aside>
+
         <aside class="hero-card">
           <div class="big">T.R.I.A.L.</div>
           <h3>Don't just hear promises. Track the work.</h3>
