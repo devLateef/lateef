@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#101d2d" />
-  <meta name="description" content="Lateef Damilola Olatayo for CMU-Africa Student Guild President. Pan-African vision. Student-centered leadership." />
+  <meta name="description"
+    content="Lateef Damilola Olatayo for CMU-Africa Student Guild President. Pan-African vision. Student-centered leadership." />
   <title>Lateef Olatayo | Guild President</title>
   <style>
     :root {
@@ -15,127 +17,708 @@
       --white: #fff;
       --ink: #17202b;
       --muted: #66717d;
-      --line: rgba(16,29,45,.13);
+      --line: rgba(16, 29, 45, .13);
       --green: #246b53;
-      --shadow: 0 18px 55px rgba(16,29,45,.12);
+      --shadow: 0 18px 55px rgba(16, 29, 45, .12);
       --radius: 22px;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink); background: var(--cream); line-height: 1.6;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.6;
     }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-    .container { width: min(1120px, calc(100% - 40px)); margin: auto; }
-    .topbar { position: sticky; top: 0; z-index: 20; background: rgba(16,29,45,.96); backdrop-filter: blur(12px); color: white; border-bottom: 1px solid rgba(255,255,255,.1); }
-    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 850; letter-spacing: .02em; }
-    .monogram { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; color: var(--navy); background: var(--gold); font-weight: 950; }
-    .brand small { display: block; color: #c4ccd5; font-size: 10px; letter-spacing: .17em; text-transform: uppercase; font-weight: 700; }
-    .navlinks { display: flex; align-items: center; gap: 25px; font-size: 13px; color: #e0e6ed; }
-    .navlinks a:hover { color: var(--gold); }
-    .nav-cta, .btn { border: 0; border-radius: 999px; padding: 12px 19px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: transform .2s, background .2s; }
-    .nav-cta, .btn-gold { background: var(--gold); color: var(--navy); }
-    .btn:hover, .nav-cta:hover { transform: translateY(-2px); }
-    .menu-btn { display: none; color: white; border: 1px solid #526071; background: transparent; padding: 8px 12px; border-radius: 10px; }
-    .hero { color: white; background: radial-gradient(circle at 80% 20%, rgba(232,184,75,.18), transparent 30%), linear-gradient(135deg, #101d2d 0%, #1a344b 100%); overflow: hidden; position: relative; }
-    .hero:after { content: "T.R.I.A.L."; position: absolute; right: -28px; bottom: -85px; font-size: clamp(100px, 18vw, 250px); font-weight: 950; letter-spacing: -.08em; color: rgba(255,255,255,.035); pointer-events: none; }
-    .hero-grid { min-height: 620px; display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 60px; padding-top: 70px; padding-bottom: 80px; position: relative; z-index: 1; }
-    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .2em; font-size: 11px; font-weight: 900; }
-    h1 { font-size: clamp(44px, 6.2vw, 76px); line-height: .99; letter-spacing: -.055em; margin: 18px 0 22px; max-width: 760px; }
-    h1 span { color: var(--gold); }
-    .hero-copy { color: #d3dce5; max-width: 600px; font-size: 18px; }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
-    .btn-outline { border: 1px solid rgba(255,255,255,.4); color: white; background: transparent; }
-    .hero-note { margin-top: 34px; color: #aebbc8; font-size: 12px; letter-spacing: .05em; }
-    .hero-card { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.15); padding: 30px; border-radius: 28px; box-shadow: 0 25px 80px rgba(0,0,0,.18); transform: rotate(2deg); }
-    .hero-card .big { color: var(--gold); font-size: 56px; font-weight: 950; line-height: 1; letter-spacing: -.06em; }
-    .hero-card h3 { margin: 15px 0 8px; font-size: 23px; }
-    .hero-card p { color: #d0d9e1; font-size: 14px; }
-    .trial-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 24px; }
-    .trial-list div { padding: 12px; border-radius: 12px; background: rgba(255,255,255,.07); font-size: 12px; }
-    .trial-list b { color: var(--gold); margin-right: 7px; }
-    section { padding: 88px 0; }
-    .section-head { max-width: 700px; margin-bottom: 38px; }
-    .kicker { color: var(--green); font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .18em; }
-    h2 { color: var(--navy); font-size: clamp(32px, 4vw, 48px); letter-spacing: -.045em; line-height: 1.08; margin: 10px 0 14px; }
-    .section-head p { color: var(--muted); font-size: 17px; margin: 0; }
-    .story { display: grid; grid-template-columns: .85fr 1.15fr; gap: 50px; align-items: start; }
-    .story-aside { background: var(--navy); color: white; border-radius: var(--radius); padding: 30px; position: sticky; top: 100px; }
-    .story-aside .quote-mark { color: var(--gold); font-size: 60px; line-height: .8; font-weight: 900; }
-    .story-aside blockquote { margin: 12px 0; font-size: 22px; font-weight: 750; line-height: 1.3; }
-    .story-aside small { color: #b8c3ce; }
-    .story-body p { color: #4d5965; }
-    .story-body strong { color: var(--navy); }
-    .pill { display: inline-block; border: 1px solid var(--line); border-radius: 99px; padding: 7px 12px; font-size: 11px; font-weight: 800; color: var(--green); text-transform: uppercase; letter-spacing: .08em; }
-    .priorities { background: #fff; }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .card { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 25px; min-height: 255px; }
-    .card-num { color: var(--green); font-weight: 950; font-size: 12px; letter-spacing: .15em; }
-    .card h3 { margin: 15px 0 9px; color: var(--navy); font-size: 21px; line-height: 1.2; }
-    .card p { margin: 0; color: #5d6874; font-size: 14px; }
-    .card .tag { display: inline-block; margin-top: 18px; color: var(--green); font-size: 11px; font-weight: 850; }
-    .tracker { background: var(--navy); color: white; }
-    .tracker h2 { color: white; }
-    .tracker .section-head p { color: #bdc8d2; }
-    .tracker-box { background: #fff; color: var(--ink); border-radius: var(--radius); padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
-    .tracker-box h3 { color: var(--navy); font-size: 24px; margin: 0 0 8px; }
-    .tracker-box p { color: var(--muted); margin: 0; font-size: 14px; }
-    .status-list { display: grid; gap: 10px; }
-    .status { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; background: #f5f6f4; border-radius: 11px; font-size: 13px; }
-    .status b { color: var(--green); }
-    .status em { color: #737e87; font-style: normal; font-size: 11px; }
-    .values { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
-    .value { border-top: 3px solid var(--gold); padding: 18px 14px; background: white; border-radius: 0 0 14px 14px; }
-    .value b { color: var(--navy); display: block; font-size: 24px; }
-    .value span { color: var(--muted); font-size: 12px; }
-    .closing { background: var(--gold); text-align: center; padding: 82px 0; }
-    .closing h2 { max-width: 850px; margin: 0 auto 18px; }
-    .closing p { max-width: 620px; margin: 0 auto 25px; color: #55451f; }
-    .closing .btn { background: var(--navy); color: white; }
-    footer { background: #0b1521; color: white; padding: 35px 0; }
-    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    footer small { color: #aeb9c4; }
-    .socials { display: flex; gap: 16px; color: #e8c66f; font-size: 13px; font-weight: 750; }
-    .modal-backdrop { position: fixed; inset: 0; background: rgba(3,10,18,.72); display: none; place-items: center; z-index: 50; padding: 20px; }
-    .modal-backdrop.open { display: grid; }
-    .modal { background: white; width: min(520px, 100%); border-radius: 20px; padding: 28px; position: relative; }
-    .modal h3 { color: var(--navy); margin: 0 0 8px; font-size: 25px; }
-    .modal p { color: var(--muted); font-size: 14px; }
-    .close { position: absolute; right: 16px; top: 13px; border: 0; background: transparent; font-size: 25px; cursor: pointer; }
-    .field { display: grid; gap: 6px; margin: 14px 0; }
-    .field label { font-size: 12px; font-weight: 800; color: var(--navy); }
-    .field input, .field select, .field textarea { width: 100%; padding: 12px; border: 1px solid #d6dce0; border-radius: 10px; font: inherit; }
-    .field textarea { min-height: 90px; resize: vertical; }
-    .form-note { font-size: 11px !important; }
-    .toast { position: fixed; bottom: 20px; left: 50%; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; background: var(--navy); color: white; padding: 12px 18px; border-radius: 99px; z-index: 80; transition: .25s; font-size: 13px; }
-    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(16, 29, 45, .96);
+      backdrop-filter: blur(12px);
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 850;
+      letter-spacing: .02em;
+    }
+
+    .monogram {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      background: var(--gold);
+      font-weight: 950;
+    }
+
+    .brand small {
+      display: block;
+      color: #c4ccd5;
+      font-size: 10px;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      font-size: 13px;
+      color: #e0e6ed;
+    }
+
+    .navlinks a:hover {
+      color: var(--gold);
+    }
+
+    .nav-cta,
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 19px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform .2s, background .2s;
+    }
+
+    .nav-cta,
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn:hover,
+    .nav-cta:hover {
+      transform: translateY(-2px);
+    }
+
+    .menu-btn {
+      display: none;
+      color: white;
+      border: 1px solid #526071;
+      background: transparent;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+
+    .hero {
+      color: white;
+      background: radial-gradient(circle at 80% 20%, rgba(232, 184, 75, .18), transparent 30%), linear-gradient(135deg, #101d2d 0%, #1a344b 100%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero:after {
+      content: "T.R.I.A.L.";
+      position: absolute;
+      right: -28px;
+      bottom: -85px;
+      font-size: clamp(100px, 18vw, 250px);
+      font-weight: 950;
+      letter-spacing: -.08em;
+      color: rgba(255, 255, 255, .035);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      min-height: 620px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: center;
+      gap: 60px;
+      padding-top: 70px;
+      padding-bottom: 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    h1 {
+      font-size: clamp(44px, 6.2vw, 76px);
+      line-height: .99;
+      letter-spacing: -.055em;
+      margin: 18px 0 22px;
+      max-width: 760px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .hero-copy {
+      color: #d3dce5;
+      max-width: 600px;
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, .4);
+      color: white;
+      background: transparent;
+    }
+
+    .hero-note {
+      margin-top: 34px;
+      color: #aebbc8;
+      font-size: 12px;
+      letter-spacing: .05em;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(255, 255, 255, .15);
+      padding: 30px;
+      border-radius: 28px;
+      box-shadow: 0 25px 80px rgba(0, 0, 0, .18);
+      transform: rotate(2deg);
+    }
+
+    .hero-card .big {
+      color: var(--gold);
+      font-size: 56px;
+      font-weight: 950;
+      line-height: 1;
+      letter-spacing: -.06em;
+    }
+
+    .hero-card h3 {
+      margin: 15px 0 8px;
+      font-size: 23px;
+    }
+
+    .hero-card p {
+      color: #d0d9e1;
+      font-size: 14px;
+    }
+
+    .trial-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .trial-list div {
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .07);
+      font-size: 12px;
+    }
+
+    .trial-list b {
+      color: var(--gold);
+      margin-right: 7px;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .section-head {
+      max-width: 700px;
+      margin-bottom: 38px;
+    }
+
+    .kicker {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(32px, 4vw, 48px);
+      letter-spacing: -.045em;
+      line-height: 1.08;
+      margin: 10px 0 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .story {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .story-aside {
+      background: var(--navy);
+      color: white;
+      border-radius: var(--radius);
+      padding: 30px;
+      position: sticky;
+      top: 100px;
+    }
+
+    .story-aside .quote-mark {
+      color: var(--gold);
+      font-size: 60px;
+      line-height: .8;
+      font-weight: 900;
+    }
+
+    .story-aside blockquote {
+      margin: 12px 0;
+      font-size: 22px;
+      font-weight: 750;
+      line-height: 1.3;
+    }
+
+    .story-aside small {
+      color: #b8c3ce;
+    }
+
+    .story-body p {
+      color: #4d5965;
+    }
+
+    .story-body strong {
+      color: var(--navy);
+    }
+
+    .pill {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      padding: 7px 12px;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .priorities {
+      background: #fff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 25px;
+      min-height: 255px;
+    }
+
+    .card-num {
+      color: var(--green);
+      font-weight: 950;
+      font-size: 12px;
+      letter-spacing: .15em;
+    }
+
+    .card h3 {
+      margin: 15px 0 9px;
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .card p {
+      margin: 0;
+      color: #5d6874;
+      font-size: 14px;
+    }
+
+    .card .tag {
+      display: inline-block;
+      margin-top: 18px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 850;
+    }
+
+    .tracker {
+      background: var(--navy);
+      color: white;
+    }
+
+    .tracker h2 {
+      color: white;
+    }
+
+    .tracker .section-head p {
+      color: #bdc8d2;
+    }
+
+    .tracker-box {
+      background: #fff;
+      color: var(--ink);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .tracker-box h3 {
+      color: var(--navy);
+      font-size: 24px;
+      margin: 0 0 8px;
+    }
+
+    .tracker-box p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .status-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .status {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      background: #f5f6f4;
+      border-radius: 11px;
+      font-size: 13px;
+    }
+
+    .status b {
+      color: var(--green);
+    }
+
+    .status em {
+      color: #737e87;
+      font-style: normal;
+      font-size: 11px;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .value {
+      border-top: 3px solid var(--gold);
+      padding: 18px 14px;
+      background: white;
+      border-radius: 0 0 14px 14px;
+    }
+
+    .value b {
+      color: var(--navy);
+      display: block;
+      font-size: 24px;
+    }
+
+    .value span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .closing {
+      background: var(--gold);
+      text-align: center;
+      padding: 82px 0;
+    }
+
+    .closing h2 {
+      max-width: 850px;
+      margin: 0 auto 18px;
+    }
+
+    .closing p {
+      max-width: 620px;
+      margin: 0 auto 25px;
+      color: #55451f;
+    }
+
+    .closing .btn {
+      background: var(--navy);
+      color: white;
+    }
+
+    footer {
+      background: #0b1521;
+      color: white;
+      padding: 35px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer small {
+      color: #aeb9c4;
+    }
+
+    .socials {
+      display: flex;
+      gap: 16px;
+      color: #e8c66f;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 10, 18, .72);
+      display: none;
+      place-items: center;
+      z-index: 50;
+      padding: 20px;
+    }
+
+    .modal-backdrop.open {
+      display: grid;
+    }
+
+    .modal {
+      background: white;
+      width: min(520px, 100%);
+      border-radius: 20px;
+      padding: 28px;
+      position: relative;
+    }
+
+    .modal h3 {
+      color: var(--navy);
+      margin: 0 0 8px;
+      font-size: 25px;
+    }
+
+    .modal p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .close {
+      position: absolute;
+      right: 16px;
+      top: 13px;
+      border: 0;
+      background: transparent;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      margin: 14px 0;
+    }
+
+    .field label {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d6dce0;
+      border-radius: 10px;
+      font: inherit;
+    }
+
+    .field textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 11px !important;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%, 20px);
+      opacity: 0;
+      pointer-events: none;
+      background: var(--navy);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 99px;
+      z-index: 80;
+      transition: .25s;
+      font-size: 13px;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
     @media (max-width: 820px) {
-      .navlinks { display: none; position: absolute; top: 76px; left: 0; right: 0; background: var(--navy); padding: 18px 22px 24px; flex-direction: column; align-items: flex-start; }
-      .navlinks.open { display: flex; }
-      .menu-btn { display: inline-block; }
-      .nav-cta { display: none; }
-      .hero-grid, .story, .tracker-box { grid-template-columns: 1fr; }
-      .hero-grid { gap: 35px; min-height: auto; }
-      .hero-card { transform: none; max-width: 520px; }
-      .cards { grid-template-columns: 1fr 1fr; }
-      .story-aside { position: static; }
-      .values { grid-template-columns: repeat(2, 1fr); }
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: var(--navy);
+        padding: 18px 22px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navlinks.open {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: inline-block;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero-grid,
+      .story,
+      .tracker-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 35px;
+        min-height: auto;
+      }
+
+      .hero-card {
+        transform: none;
+        max-width: 520px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .story-aside {
+        position: static;
+      }
+
+      .values {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
+
     @media (max-width: 540px) {
-      .container { width: min(100% - 30px, 1120px); }
-      section { padding: 65px 0; }
-      .hero-grid { padding-top: 58px; padding-bottom: 65px; }
-      .hero-copy { font-size: 16px; }
-      .cards { grid-template-columns: 1fr; }
-      .values { grid-template-columns: 1fr 1fr; }
-      .trial-list { grid-template-columns: 1fr 1fr; }
-      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .container {
+        width: min(100% - 30px, 1120px);
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .hero-grid {
+        padding-top: 58px;
+        padding-bottom: 65px;
+      }
+
+      .hero-copy {
+        font-size: 16px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .values {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trial-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
   </style>
 </head>
+
 <body>
   <header class="topbar">
     <div class="container nav">
@@ -144,7 +727,8 @@
         <span>LATEEF OLATAYO<small>Guild President Campaign</small></span>
       </a>
       <nav class="navlinks" id="navlinks">
-        <a href="#story">My story</a><a href="#priorities">Priorities</a><a href="#accountability">Accountability</a><a href="#trial">T.R.I.A.L.</a>
+        <a href="#story">My story</a><a href="#priorities">Priorities</a><a href="#accountability">Accountability</a><a
+          href="#trial">T.R.I.A.L.</a>
       </nav>
       <button class="nav-cta" data-open-modal>Support the campaign</button>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
@@ -157,20 +741,26 @@
         <div>
           <div class="eyebrow">For CMU-Africa Student Guild President</div>
           <h1>Pan-African vision.<br><span>Student-centered</span> leadership.</h1>
-          <p class="hero-copy">A Guild that listens, advocates, follows through, and makes student concerns visible. Let's build a campus experience where every student has a voice and the support to thrive.</p>
+          <p class="hero-copy">A Guild that listens, advocates, follows through, and makes student concerns visible.
+            Let's build a campus experience where every student has a voice and the support to thrive.</p>
           <div class="hero-actions">
             <a class="btn btn-gold" href="#priorities">Explore the vision <span>→</span></a>
             <button class="btn btn-outline" data-open-modal>Get involved</button>
           </div>
           <div class="hero-note">TRANSPARENCY · REPRESENTATION · INCLUSIVITY · ADVOCACY · LEGACY</div>
         </div>
+        <aside>
+          <img src="./assets/lateef.jpg.jpeg" alt="Lateef Photo">
+        </aside>
         <aside class="hero-card">
           <div class="big">T.R.I.A.L.</div>
           <h3>Don't just hear promises. Track the work.</h3>
           <p>Leadership should be measured by action, honest communication, and consistent follow-through.</p>
           <div class="trial-list">
-            <div><b>T</b> Transparency</div><div><b>R</b> Representation</div>
-            <div><b>I</b> Inclusivity</div><div><b>A</b> Advocacy</div>
+            <div><b>T</b> Transparency</div>
+            <div><b>R</b> Representation</div>
+            <div><b>I</b> Inclusivity</div>
+            <div><b>A</b> Advocacy</div>
             <div><b>L</b> Legacy</div>
           </div>
         </aside>
@@ -181,16 +771,23 @@
       <div class="container story">
         <aside class="story-aside">
           <div class="quote-mark">“</div>
-          <blockquote>Leadership is not just about hearing people's concerns. It is about taking responsibility and acting on them.</blockquote>
+          <blockquote>Leadership is not just about hearing people's concerns. It is about taking responsibility and
+            acting on them.</blockquote>
           <small>— The leadership principle behind this campaign</small>
         </aside>
         <div class="story-body">
           <span class="pill">A leadership story</span>
           <h2>When 100 students needed someone to act.</h2>
-          <p>As class governor, I once faced a difficult situation: a professor threatened to deduct 10 marks from more than 100 students after a rescheduled class was missed because the information had not reached the class group.</p>
-          <p>My colleagues were understandably worried. I reached out to the professor, explained the communication breakdown, and negotiated for the class to be held over the weekend. We found a way forward without the threatened penalty.</p>
-          <p><strong>That experience reinforced what I believe leadership should look like:</strong> listen carefully, understand the real problem, engage the right people, and follow through.</p>
-          <p>That is the approach I want to bring to the Student Guild: practical advocacy, empathy, and accountability.</p>
+          <p>As class governor, I once faced a difficult situation: a professor threatened to deduct 10 marks from more
+            than 100 students after a rescheduled class was missed because the information had not reached the class
+            group.</p>
+          <p>My colleagues were understandably worried. I reached out to the professor, explained the communication
+            breakdown, and negotiated for the class to be held over the weekend. We found a way forward without the
+            threatened penalty.</p>
+          <p><strong>That experience reinforced what I believe leadership should look like:</strong> listen carefully,
+            understand the real problem, engage the right people, and follow through.</p>
+          <p>That is the approach I want to bring to the Student Guild: practical advocacy, empathy, and accountability.
+          </p>
         </div>
       </div>
     </section>
@@ -200,43 +797,50 @@
         <div class="section-head">
           <div class="kicker">The student experience</div>
           <h2>Practical priorities. Honest commitments.</h2>
-          <p>Build on existing university and Guild structures, work with the right stakeholders, and focus on improvements students can feel.</p>
+          <p>Build on existing university and Guild structures, work with the right stakeholders, and focus on
+            improvements students can feel.</p>
         </div>
         <div class="cards">
           <article class="card">
             <div class="card-num">01 / STUDENT WELFARE</div>
             <h3>More affordable meal choices</h3>
-            <p>Engage the food vendor and university management to explore varied meal options and price points that reflect different student budgets, while maintaining reasonable quality.</p>
+            <p>Engage the food vendor and university management to explore varied meal options and price points that
+              reflect different student budgets, while maintaining reasonable quality.</p>
             <span class="tag">ADVOCATE & NEGOTIATE</span>
           </article>
           <article class="card">
             <div class="card-num">02 / HOUSING SUPPORT</div>
             <h3>Make settling in Kigali easier</h3>
-            <p>Work with the International Ministry to strengthen housing information and support for incoming students, and raise concerns about unfair rent increases and agent-related challenges.</p>
+            <p>Work with the International Ministry to strengthen housing information and support for incoming students,
+              and raise concerns about unfair rent increases and agent-related challenges.</p>
             <span class="tag">COLLABORATE WITH EXISTING MINISTRIES</span>
           </article>
           <article class="card">
             <div class="card-num">03 / LEARNING ENVIRONMENT</div>
             <h3>Spaces and practical resources</h3>
-            <p>Advocate for accessible study and collaboration spaces, and engage relevant university departments on laboratory equipment, maintenance, and access for practical learning.</p>
+            <p>Advocate for accessible study and collaboration spaces, and engage relevant university departments on
+              laboratory equipment, maintenance, and access for practical learning.</p>
             <span class="tag">ADVOCATE WITH UNIVERSITY PARTNERS</span>
           </article>
           <article class="card">
             <div class="card-num">04 / INDUSTRY ENGAGEMENT</div>
             <h3>Learn from people solving real problems</h3>
-            <p>Collaborate with Career Services to bring industry experts, entrepreneurs, and alumni to share how they approach real challenges and develop practical solutions.</p>
+            <p>Collaborate with Career Services to bring industry experts, entrepreneurs, and alumni to share how they
+              approach real challenges and develop practical solutions.</p>
             <span class="tag">CMU-AFRICA DEEP TECH TALKS</span>
           </article>
           <article class="card">
             <div class="card-num">05 / STUDENT SUPPORT</div>
             <h3>Mobilise support for funding gaps</h3>
-            <p>Explore, with the university, a transparent way to connect willing alumni, companies, and donors with students who need additional financial assistance.</p>
+            <p>Explore, with the university, a transparent way to connect willing alumni, companies, and donors with
+              students who need additional financial assistance.</p>
             <span class="tag">PARTNERSHIPS & ACCOUNTABILITY</span>
           </article>
           <article class="card">
             <div class="card-num">06 / REPRESENTATION</div>
             <h3>Make student concerns count</h3>
-            <p>Listen, represent student concerns constructively, engage the appropriate decision-makers, and communicate progress honestly—including when an issue takes time.</p>
+            <p>Listen, represent student concerns constructively, engage the appropriate decision-makers, and
+              communicate progress honestly—including when an issue takes time.</p>
             <span class="tag">LISTEN · ADVOCATE · FOLLOW UP</span>
           </article>
         </div>
@@ -248,12 +852,14 @@
         <div class="section-head">
           <div class="kicker" style="color:var(--gold)">Accountability in action</div>
           <h2>Don't just hear promises. Track the work.</h2>
-          <p>A Guild Progress Tracker would complement existing town halls and financial reporting—not replace them. It would make the follow-through on Guild commitments easier to see.</p>
+          <p>A Guild Progress Tracker would complement existing town halls and financial reporting—not replace them. It
+            would make the follow-through on Guild commitments easier to see.</p>
         </div>
         <div class="tracker-box">
           <div>
             <h3>Know what happens after a concern is raised.</h3>
-            <p>The proposed tracker will show what the Guild committed to, what action has been taken, the current status, and the next step. Updates will be honest and mindful of student privacy.</p>
+            <p>The proposed tracker will show what the Guild committed to, what action has been taken, the current
+              status, and the next step. Updates will be honest and mindful of student privacy.</p>
           </div>
           <div class="status-list">
             <div class="status"><span>Commitment recorded</span><b>Proposed</b></div>
@@ -270,7 +876,8 @@
         <div class="section-head">
           <div class="kicker">The leadership framework</div>
           <h2>Give leadership a T.R.I.A.L.</h2>
-          <p>Five principles that should guide how the Guild represents students and carries out its responsibilities.</p>
+          <p>Five principles that should guide how the Guild represents students and carries out its responsibilities.
+          </p>
         </div>
         <div class="values">
           <div class="value"><b>T</b><span>Transparency</span></div>
@@ -308,16 +915,26 @@
     <div class="modal">
       <button class="close" id="closeModal" aria-label="Close">×</button>
       <h3 id="modalTitle">Connect with the campaign</h3>
-      <p>Share a question, concern, idea, or offer to support the campaign. This demo form opens an email draft; connect a form service if you want online submissions stored.</p>
+      <p>Share a question, concern, idea, or offer to support the campaign. This demo form opens an email draft; connect
+        a form service if you want online submissions stored.</p>
       <form id="contactForm">
-        <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Your name" /></div>
-        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com" /></div>
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" required
+            placeholder="Your name" /></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required
+            placeholder="you@example.com" /></div>
         <div class="field"><label for="topic">What would you like to discuss?</label>
-          <select id="topic" name="topic"><option>Share a student concern</option><option>Volunteer or support the campaign</option><option>Suggest an initiative</option><option>Ask a question</option></select>
+          <select id="topic" name="topic">
+            <option>Share a student concern</option>
+            <option>Volunteer or support the campaign</option>
+            <option>Suggest an initiative</option>
+            <option>Ask a question</option>
+          </select>
         </div>
-        <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Write your message..."></textarea></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" required
+            placeholder="Write your message..."></textarea></div>
         <button class="btn btn-gold" type="submit">Prepare email</button>
-        <p class="form-note">Before launch, replace the campaign email address in the JavaScript below. No information is stored by this page.</p>
+        <p class="form-note">Before launch, replace the campaign email address in the JavaScript below. No information
+          is stored by this page.</p>
       </form>
     </div>
   </div>
@@ -395,4 +1012,5 @@
     });
   </script>
 </body>
+
 </html>
